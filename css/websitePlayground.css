@@ -1,0 +1,89 @@
+/* WebsitePlayground.css */
+h1{
+	text-align: center;
+}
+
+.draggable { 
+	width: 100px; 
+	height: 100px; 
+	padding: 0.5em; 
+	float: left; 
+	margin: 10px 10px 10px 0; 
+}
+
+.sticky{
+	margin-right: 20px;
+}
+
+.sticky p{
+	text-align: center;
+}
+
+.GreenTileIcon{
+	background-color: green;
+}
+
+#droppable { 
+	width: 150px; 
+	height: 150px; 
+	padding: 0.5em; 
+	float: left; 
+	margin: 10px; 
+}
+
+.test { 
+	width: 150px; 
+	height: 150px; 
+	padding: 0.5em; 
+	float: left; 
+	margin: 10px; 
+}
+
+#createStickyButton { }
+
+#stickyList{}
+
+#sidebox {
+	position:fixed;
+	z-index: 100000;
+	right: -225px;
+	top: 0px;
+	width:275px;
+	height:650px;
+}
+
+#sidebox .tab,
+#sidebox .content {
+	background:#bada55;
+}
+
+#sidebox .content {
+	float:right;
+	width:225px;
+	height: inherit;
+}
+
+#sidebox .tab {
+	cursor:pointer;
+	background: #A0A0A0;
+	float:left;
+	width:50px;
+	height:100px;
+}
+
+#greenTileList
+{
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+ul {
+	
+	padding-left: 0px;				
+}
+
+ul, li {
+	list-style-type: none;
+	display: inline;
+	//margin-left: -40px;
+}
