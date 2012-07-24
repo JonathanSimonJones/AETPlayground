@@ -13,14 +13,11 @@ h1{
 
 .sticky{
 	margin-right: 20px;
+	background-color: green;
 }
 
 .sticky p{
 	text-align: center;
-}
-
-.GreenTileIcon{
-	background-color: green;
 }
 
 #droppable { 
