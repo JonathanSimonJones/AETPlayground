@@ -10,9 +10,8 @@ $(function() {
 	
 	function CreateNewSticky(nameOfSticky)
 	{
-		var htmlData='<div class="sticky" contenteditable="true"><p>Drag me around</p></div>';
+		var htmlData='<div class="sticky"></div>';
 		$('#stickyList').append(htmlData);
-		var ariaLabelledby = 0;
 		$('.sticky:not(.ui-draggable)').dialog({
 													close: function()
 													{
@@ -23,15 +22,14 @@ $(function() {
 													{
 														if(nameOfSticky)
 														{
-															$(this).html('<img src =' + nameOfSticky + ' width="100" height="100" style="position:absolute; top: 0px; left: 0px;">');
+															$(this).html('<img src =' + nameOfSticky + ' style="position:absolute; top: 0px; left: 0px;">');
 														}
 														else
 														{
 															$(this).html('<p>Enter text here</p>');
 														}
-														$(this).dialog( "option", "width", 150 );
-														$(this).dialog( "option", "height", 150 );
-														//ariaLabelledby = $(this).attr('aria-labelledby');
+														$(this).dialog( "option", "width", 300 );
+														$(this).dialog( "option", "height", 300 );
 													}
 													/*
 													drag: function()
@@ -52,7 +50,7 @@ $(function() {
 				.filter(".ui-helper-clearfix")
 				.removeClass('ui-widget-header ui-corner-all ui-helper-clearfix');
 	}
-	
+
 	function resetTab()
 	{
 		$('#sidebox').css({'right':-150 + "px"});
@@ -63,11 +61,33 @@ $(function() {
 		}, function(){
 			$('#sidebox').animate({'left':-225 + "px"});
 		});
-	
+
 	$(".GreenTileIcon").click(function()
 	{
 		var imageTitle = $(this).attr('src');
 		CreateNewSticky(imageTitle);
 	});
    
+   $("#challengeCard").toggle(
+   function()
+   {
+		$("#challengeCard").animate({ 	width: 400+"px",
+										height: 400+"px",
+										marginRight:"30%",
+										marginTop:0+"px"}, 1500);
+		$("#ChallegeCardContent").css({'visibility': 'visible'});
+   },
+   function()
+   {
+		$("#challengeCard").animate({ 	width: 100+"px",
+										height: 100+"px",
+										marginRight:"0%",
+										marginTop:-50+"px"}, 1500);
+		$("#ChallegeCardContent").css({'visibility': 'collapse'});
+   });
+   
+   $("#PickRandomQuestion").dblclick(function()
+   {
+		$("RandomQuestion").css({'visibility': 'visible'});
+   });
 });
