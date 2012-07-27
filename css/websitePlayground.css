@@ -49,7 +49,7 @@ h1{
 
 #createStickyButton { 
 	top: 50px;
-	left: 300px;
+	left: 20%;
 	position: absolute;
 }
 
@@ -160,4 +160,122 @@ h4{
 .ChallengeCardQuestion
 {
 	visibility: collapse;
+}
+/* Footer stuff */
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+#container {
+    min-height: 100%;
+    margin-bottom: -100px;
+}
+* html #container {
+    height: 100%;
+}
+#footer-spacer {
+    height: 100px;
+}
+footer{
+    height: 99px;
+}
+footer p {
+    margin: 0;
+    padding: 0.3em 0;
+}
+
+#tabbed_box {  
+	margin: 0px auto 0px auto;  
+	width:300px;  
+}  
+
+.tabbed_box h4 {  
+	font-family:Arial, Helvetica, sans-serif;  
+	font-size:23px;  
+	color:#ffffff;  
+	letter-spacing:-1px;  
+	margin-bottom:10px;  
+}  
+.tabbed_box h4 small {  
+	color:#e3e9ec;  
+	font-weight:normal;  
+	font-size:9px;  
+	font-family:Verdana, Arial, Helvetica, sans-serif;  
+	text-transform:uppercase;  
+	position:relative;  
+	top:-4px;  
+	left:6px;  
+	letter-spacing:0px;  
+}  
+
+ul.tabs li a {  
+	background-color:#464c54;  
+	color:#ffebb5;  
+	padding:8px 14px 8px 14px;  
+	text-decoration:none;  
+	font-size:9px;  
+	font-family:Verdana, Arial, Helvetica, sans-serif;  
+	font-weight:bold;  
+	text-transform:uppercase;  
+	border:1px solid #464c54;   
+}  
+ul.tabs li a:hover {  
+	background-color:#2f343a;  
+	border-color:#2f343a;  
+}  
+ul.tabs li a.active {  
+	background-color:#ffffff;  
+	color:#282e32;  
+	border:1px solid #464c54;   
+	border-bottom: 1px solid #ffffff;  
+}
+
+.footerTabContent {  
+	background-color:#ffffff;  
+	padding:10px;  
+	border:1px solid #464c54;     
+	margin-top: 5px;
+	height: 51px;
+}  
+#content_2, #content_3 { display:none; }  
+
+ul.tabs {  
+	margin:0px; padding:0px;  
+	margin-top:5px;  
+	margin-bottom:6px;
+	width: 500px;
+}  
+
+.footerTabContent ul {  
+	margin:0px;  
+	padding:0px 20px 0px 20px;  
+}  
+.footerTabContent ul li {  
+	list-style:none;  
+	border-bottom:1px solid #d6dde0;  
+	padding-top:15px;  
+	padding-bottom:15px;  
+	font-size:13px;  
+}  
+.footerTabContent ul li a {  
+	text-decoration:none;  
+	color:#3e4346;  
+}  
+.footerTabContent ul li a small {  
+	color:#8b959c;  
+	font-size:9px;  
+	text-transform:uppercase;  
+	font-family:Verdana, Arial, Helvetica, sans-serif;  
+	position:relative;  
+	left:4px;  
+	top:0px;  
+}
+
+.footerTab{
+	
 }
