@@ -18,6 +18,11 @@
 			.test { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
 			#createStickyButton { }
 			#stickyList{}
+			.shadow {
+			  -moz-box-shadow:    4px 5px 8px 1px #ccc;
+			  -webkit-box-shadow: 4px 5px 8px 1px #ccc;
+			  box-shadow:         4px 5px 8px 1px #ccc;
+			}
 		</style>
 		
 		<script>
@@ -62,11 +67,16 @@
 	</head>
 
 	<body>
-
-		<div class="demo">
+		<div id="fuzz">
+			<div class="msgbox">
+				<a class="close" href="#" ><img src="close.jpg"/></a>
+			</div>
+		</div>
+		
+		<div class="content">
 			
 			<section id="stickyList">
-					<div class="ui-widget-content draggable">
+					<div class="ui-widget-content draggable shadow">
 						<p>Drag me to my target</p>
 					</div>
 			</section>

@@ -2,7 +2,17 @@
 
 $(document).ready(function()
 {
-	//alert("Foo");
+	$("#OverLay").css("height", $(document).height());
+	
+	$(".BrownTile").click(function(){
+		$("#OverLay").fadeIn();
+		return false;
+	});
+	
+	$("#OverLay").click(function(){
+		$("#OverLay").fadeOut();
+		return false;
+	});
 });
 
 $(function() {						
@@ -90,8 +100,6 @@ $(function() {
    {
 		$("RandomQuestion").css({'visibility': 'visible'});
    });
-   
-
 });
 
 function tabSwitch(new_tab, new_content) {  
@@ -102,9 +110,13 @@ function tabSwitch(new_tab, new_content) {
 	document.getElementById(new_content).style.display = 'block';     
 	  
   
-	document.getElementById('tab_1').className = '';  
-	document.getElementById('tab_2').className = '';  
-	document.getElementById('tab_3').className = '';          
-	document.getElementById(new_tab).className = 'active';        
+	document.getElementById('tab_1').className = '';
+	document.getElementById('tab_2').className = '';
+	document.getElementById('tab_3').className = '';
+	document.getElementById(new_tab).className = 'active';     
   
-}  
+};  
+
+$(window).bind("resize", function(){
+	$("#Window").css("height", $(window).height());
+});
