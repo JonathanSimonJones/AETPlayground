@@ -107,7 +107,7 @@ function tabSwitch(new_tab, new_content) {
 	document.getElementById('content_1').style.display = 'none';  
 	document.getElementById('content_2').style.display = 'none';  
 	document.getElementById('content_3').style.display = 'none';          
-	document.getElementById(new_content).style.display = 'block';     
+	document.getElementById(new_content).style.display = 'inline';     
 	  
   
 	document.getElementById('tab_1').className = '';

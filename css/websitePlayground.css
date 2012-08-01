@@ -95,11 +95,10 @@ h1{
 }
 
 ul {
-	
 	padding-left: 0px;				
 }
 
-#greenTileList ul, li {
+ul #greenTileList li{
 	list-style-type: none;
 	display: inline;
 	
@@ -166,6 +165,7 @@ h4{
 {
 	visibility: collapse;
 }
+
 /* Footer stuff */
 html, body , #Surface{
     height: 100%;
@@ -218,72 +218,78 @@ footer p {
 	letter-spacing:0px;  
 }  
 
-ul.tabs
-{
-	display: inline;
+ul.tabs{
 	margin:0px; 
 	padding:0px;  
 	margin-top:5px;
 	margin-bottom:6px;
 }
-ul.tabs li a {  
+
+ul.tabs li{
+	display: inline;
+	list-style:none;
+}
+ul.tabs li a {
 	display: inline-block;
-	background-color:#464c54;  
-	color:#ffebb5;  
+	background-color: grey;  
+	color: black;
 	padding-top:8px;
 	padding-bottom:8px;
 	text-decoration:none;  
 	font-size:9px;  
 	font-family:Verdana, Arial, Helvetica, sans-serif;  
-	font-weight:bold;  
+	font-weight:bold;
 	text-align: center;
 	text-transform:uppercase;  
-	border:1px solid #464c54;
+	border:1px solid black;
+	
 	width: 32.8%;
 }  
 ul.tabs li a:hover {  
-	background-color:#2f343a;  
-	border-color:#2f343a;  
+	background-color: #606060;  
+	border-color: black;  
 }  
 ul.tabs li a.active {  
-	background-color:#ffffff;  
+	background-color:silver;  
 	color:#282e32;  
 	border:1px solid #464c54;   
-	border-bottom: 1px solid #ffffff;  
+	border-bottom: 1px solid silver;  
 }
 
 .footerTabContent {
-	background-color:#ffffff;
-	padding:10px;  
-	border:1px solid #464c54;
+	background-color:silver; 
+	border:1px solid black;
 	/*border-top-style: none;*/
 	height: 100px;
-	width: 95%;
+	width: 97.5%;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	white-space: nowrap;
 	float:left;
+	margin-top: -7px;
 }  
 #content_2, #content_3 { display:none; }  
 
-.footerTabContent ul {  
+ul.footerTabContent {  
 	margin:0px;
 	/*padding:0px 20px 0px 20px;*/
 }  
-.footerTabContent ul li {  
-	list-style:none;  
-	border-bottom:1px solid #d6dde0;  
-	padding-top:15px;  
-	padding-bottom:15px;  
-	font-size:13px; 	
+.footerTabContent ul li {
+	list-style-type: none;
+	display:inline-block;
+	/*list-style:none;*/  
+	border-bottom:1px solid #d6dde0;
 }
 
 ul#footerHelpAndAddIcons
 {
-	display:block;
 	float:left;
 }
 
+ul#footerHelpAndAddIcons li
+{
+	list-style:none;
+}
 ul#footerHelpAndAddIcons li a
 {
 	display: block;
@@ -312,7 +318,7 @@ ul#footerHelpAndAddIcons li a
 	-webkit-box-shadow: 4px 5px 8px 1px #ccc;
 	box-shadow:         4px 5px 8px 1px #ccc;
 }
-			
+		
 .Window
 {
 	position:absolute; 
@@ -324,5 +330,23 @@ ul#footerHelpAndAddIcons li a
 	top: 50%; 
 	left: 50%; 
 	margin-top: -100px; 
-	margin-left: -150px; 
+	margin-left: -150px;
+}
+
+.GreyOverlay
+{
+	background:silver;
+    opacity:0.2;
+    filter:alpha(opacity=20);
+}
+
+a img.bottomBarIcon
+{
+	position: relative;
+	top: 5px;
+	left: -5px;
+}
+
+.GreenTileIcon{
+	float: left;
 }
