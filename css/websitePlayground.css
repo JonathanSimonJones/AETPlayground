@@ -17,8 +17,8 @@ h1{
 	margin: 10px 10px 10px 0; 
 }
 
-.sticky{
-	background-color: green;
+.sticky{ 
+	/*background: #005000;*/
 }
 
 .greenSticky{
@@ -314,9 +314,9 @@ ul#footerHelpAndAddIcons li a
 }
 
 .shadow {
-	-moz-box-shadow:    4px 5px 8px 1px #ccc;
-	-webkit-box-shadow: 4px 5px 8px 1px #ccc;
-	box-shadow:         4px 5px 8px 1px #ccc;
+	-moz-box-shadow:    4px 5px 8px 1px #666;
+	-webkit-box-shadow: 4px 5px 8px 1px #666;
+	box-shadow:         4px 5px 8px 1px #666;
 }
 		
 .Window

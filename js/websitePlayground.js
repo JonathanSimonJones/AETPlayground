@@ -13,6 +13,15 @@ $(document).ready(function()
 		$("#OverLay").fadeOut();
 		return false;
 	});
+	
+	$('.sticky').draggable({ 	stack: ".sticky",
+							helper: "clone",
+							containment: '#Surface',
+							stop:function(event, ui)
+								{
+									 $(ui.helper).clone(true).removeClass('box ui-draggable-dragging GreyOverlay').addClass('sticky-clone shadow').appendTo('#stickyList');
+								}
+							});
 });
 
 $(function() {						
@@ -20,47 +29,29 @@ $(function() {
 	
 	function CreateNewSticky(nameOfSticky)
 	{
-		var htmlData='<div class="sticky"></div>';
+		var htmlData='<div contenteditable="true"><div class="sticky-clone" ><p>Drag me around</p></div></div>';
 		$('#stickyList').append(htmlData);
-		$('.sticky:not(.ui-draggable)').dialog({
-													close: function()
-													{
-														$(this).dialog("destroy");
-														$(this).remove();
-													},
-													open: function()
-													{
-														if(nameOfSticky)
-														{
-															$(this).html('<img src =' + nameOfSticky + ' style="position:absolute; top: 0px; left: 0px;">');
-														}
-														else
-														{
-															$(this).html('<p>Enter text here</p>');
-														}
-														$(this).dialog( "option", "width", 300 );
-														$(this).dialog( "option", "height", 300 );
-													}
-													/*
-													drag: function()
-													{
-														resetTab();
-													}*/
-													});
-		if(	nameOfSticky )
-		{		
-			$("div").filter(".ui-widget-content")
-					.removeClass('ui-widget-content')
-					.addClass('greenSticky');
-		}
-		$('.ui-dialog-titlebar-close').css({'top':'15px', 'float':'right'});
-		$("span").remove('#ui-dialog-title-1');
-		$("div").filter(".ui-widget-header")
-				.filter(".ui-corner-all")
-				.filter(".ui-helper-clearfix")
-				.removeClass('ui-widget-header ui-corner-all ui-helper-clearfix');
+		$('.sticky-clone').draggable({stack: ".sticky-clone"});
 	}
+	
+	$(".sticky-clone").live('mouseover', function() {
+		$(this).draggable({ 
+			containment: '#Surface',
+			stack: ".sticky-clone",
+			open:function()
+			{
+				$('#createStickyButton').click(function()
+				{
+					$(this).draggable("destroy");
+					$(this).remove();
+				});
+			}
+		});
+	});
 
+	
+
+	
 	function resetTab()
 	{
 		$('#sidebox').css({'right':-150 + "px"});
