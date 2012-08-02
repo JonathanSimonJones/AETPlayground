@@ -5,7 +5,6 @@ a{
 }
 
 .sticky{ 
-	/*background: #005000;*/
 }
 
 .greenSticky{
@@ -80,52 +79,6 @@ ul #greenTileList li{
 	list-style-type: none;
 	display: inline;
 	
-}
-
-#challengeCard
-{
-	width: 100px;
-	height: 100px;
-	
-	background-color: yellow;
-	
-	border-style: solid;
-	border-width: 1.5px;
-	border-color: black;
-	
-}
-
-#RightHandBar{
-	float: right;
-}
-
-#StickyNoteIcon{
-	width: 100px;
-	height: 100px;
-	background: #F9F8C9;
-}
-
-#ChallegeCardContent
-{
-	visibility: collapse;
-}
-
-h4{
-	text-align: center;
-}
-
-#PickRandomQuestion
-{
-	visibility: inherit;
-}
-
-.RandomQuestion
-{
-	visibility: collapse;
-}
-.ChallengeCardQuestion
-{
-	visibility: collapse;
 }
 
 /* Footer stuff */
@@ -323,3 +276,68 @@ a img.bottomBarIcon
 	height: 100px;
 	background: #F9F8C9;
 }
+
+/*
+	Right bar styles
+*/
+
+.RightBarIcon{
+	margin: 20px;
+}
+
+#challengeCard
+{
+	position: relative;
+	top: 365px;
+	right: -140px;
+	float: right;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	
+	border-style: solid;
+	border-width: 1.5px;
+	border-color: black;
+}
+
+#RightHandBar{
+	display: block;
+	/*position: relative;
+	float: right;
+	top: 100px;*/
+}
+
+#StickyNoteIcon{
+	position: relative;
+	top: 175px;
+	float: right;
+	width: 100px;
+	height: 100px;
+	background: #F9F8C9;
+}
+
+#ChallegeCardContent
+{
+	visibility: collapse;
+}
+
+h4{
+	text-align: center;
+}
+
+#PickRandomQuestion
+{
+	visibility: inherit;
+}
+
+.RandomQuestion
+{
+	visibility: collapse;
+}
+.ChallengeCardQuestion
+{
+	visibility: collapse;
+}
+
+/*
+	End of right bar styles

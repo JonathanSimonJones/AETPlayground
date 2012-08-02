@@ -21,23 +21,23 @@
 			<header id="HeaderSlidingBar">
 				<img src='Icons2/Header/beta.png' title='Beta' width="100" height="200" id="BetaLogo">
 				<div id="HeaderContent">
-					<img src='Icons2/Header/MovingTargetsLogo.jpg' title='MovingTargetsLogo' width="300" height="150" id="MovingTargetsLogo">
+					<img src='Icons2/Header/MovingTargetsLogo.jpg' title='MovingTargetsLogo' width="300" height="150">
 				</div>
 				<div id="HeaderTitle">
-					<h1><b>BRAINSTORMING SPACE</b><small><p> How can you involve your <i>potential</i> audiences?</p><small></h1>
+					<h1><b>BRAINSTORMING SPACE</b><small><p> How can you involve your <i>potential</i> audiences?</p></small></h1>
 				</div>
 				<div id="HeaderTab">
-				
+					<img src='Icons2/Header/topBarArrowDown.png' width="35" height="25" id="MovingTargetsTab">
 				</div>
 			</header>
 			
 			<div id="StickySpace">
 				<section id="RightHandBar">
-					<section id="StickyNoteIcon" class="sticky sticky_editable">
+					<section id="StickyNoteIcon" class="sticky sticky_editable RightBarIcon">
 						<p>Sticky Note</p>
 					</section>
 				
-					<section id="challengeCard">
+					<section id="challengeCard" class="RightBarIcon">
 						<h4> Challenge Card </h4>
 						<div id="ChallegeCardContent">
 							<a href="#" id="PickRandomQuestion">Pick random related question</a>

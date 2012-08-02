@@ -19,14 +19,12 @@ $(document).ready(function()
 							containment: '#Surface',
 							stop:function(event, ui)
 								{
-									 $(ui.helper).clone(true).removeClass('box ui-draggable-dragging GreyOverlay').addClass('sticky-clone shadow').appendTo('#stickyList');
+									 $(ui.helper).clone(true).removeClass('box ui-draggable-dragging GreyOverlay RightBarIcon').addClass('sticky-clone shadow').appendTo('#stickyList');
 								}
 							});
 });
 
 $(function() {						
-	$("#createStickyButton").click(function(){CreateNewSticky()});
-	
 	function CreateNewSticky(nameOfSticky)
 	{
 		var htmlData='<div contenteditable="true"><div class="sticky-clone" ><p>Drag me around</p></div></div>';
@@ -46,14 +44,19 @@ $(function() {
 					$(this).remove();
 				});
 			}
-		});
+		}).bind('click', function()
+								{
+									$(this).focus();
+								});
 	});
 
 	// Used to animate the header
 	$('#HeaderSlidingBar #HeaderTab').toggle(function(){
 		$('#HeaderSlidingBar').animate({'top':0 + "px"});
+		$('#MovingTargetsTab').attr("src", "Icons2/Header/topBarArrowUp.png");
 	}, function(){
 		$('#HeaderSlidingBar').animate({'top':-150 + "px"});
+		$('#MovingTargetsTab').attr("src", "Icons2/Header/topBarArrowDown.png");
 	});
 
 	$(".GreenTileIcon").click(function()
@@ -62,6 +65,7 @@ $(function() {
 		CreateNewSticky(imageTitle);
 	});
    
+   /*
    $("#challengeCard").toggle(
    function()
    {
@@ -84,8 +88,9 @@ $(function() {
    {
 		$("RandomQuestion").css({'visibility': 'visible'});
    });
+   */
+   $('.sticky_editable').attr('contenteditable', 'true');
    
-   //$('.sticky_editable').attr('contenteditable', 'true');
 });
 
 function tabSwitch(new_tab, new_content) {  
