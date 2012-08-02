@@ -24,10 +24,10 @@
 					<img src='Icons2/Header/MovingTargetsLogo.jpg' title='MovingTargetsLogo' width="300" height="150">
 				</div>
 				<div id="HeaderTitle">
-					<h1><b>BRAINSTORMING SPACE</b><small><p> How can you involve your <i>potential</i> audiences?</p></small></h1>
+					<h1><b>BRAINSTORMING SPACE</b><small> How can you involve your <i>potential</i> audiences?</small></h1>
 				</div>
 				<div id="HeaderTab">
-					<img src='Icons2/Header/topBarArrowDown.png' width="35" height="25" id="MovingTargetsTab">
+					<img src='Icons2/Header/topBarArrowDown.png' width="35" height="25" id="MovingTargetsTab" alt="">
 				</div>
 			</header>
 			
@@ -71,7 +71,7 @@
 					<ul class="tabs">  
 						<li>
 							<a href="javascript:tabSwitch('tab_1', 'content_1');" id="tab_1" class="active footerTab">
-								<img src="Icons2/BottomBarIcons/Concept&Implem.png" title="Concept & Design"	width='20' height='20' class="bottomBarIcon">
+								<img src="Icons2/BottomBarIcons/Concept&#38;Implem.png" title="Concept & Design"	width='20' height='20' class="bottomBarIcon">
 								During Concept & Implementation
 							</a>
 						</li>  
@@ -139,7 +139,7 @@
 					</div>
 					<div>
 						<ul id="footerHelpAndAddIcons">
-							<li><a href="#">+</a></li>
+							<li><a href="#" id="AddGreenCard">+</a></li>
 							<li><a href="#">?</a></li>
 						</ul>
 					</div>

@@ -4,7 +4,7 @@ $(document).ready(function()
 {
 	$("#OverLay").css("height", $(document).height());
 	
-	$(".BrownTile").click(function(){
+	$("#AddGreenCard").click(function(){
 		$("#OverLay").fadeIn();
 		return false;
 	});

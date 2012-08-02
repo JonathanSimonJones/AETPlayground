@@ -42,7 +42,7 @@ a{
 	margin: 0;
 	font-size: 22px;
 }
-#HeaderSlidingBar #HeaderTitle p{
+#HeaderSlidingBar #HeaderTitle small{
 	color: black;
 	display: inline;
 }
