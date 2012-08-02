@@ -49,19 +49,12 @@ $(function() {
 		});
 	});
 
-	
-
-	
-	function resetTab()
-	{
-		$('#sidebox').css({'right':-150 + "px"});
-	}
-	
-	$('#sidebox .tab').toggle(function(){
-			$('#sidebox').animate({'left':0 + "px"});
-		}, function(){
-			$('#sidebox').animate({'left':-225 + "px"});
-		});
+	// Used to animate the header
+	$('#HeaderSlidingBar #HeaderTab').toggle(function(){
+		$('#HeaderSlidingBar').animate({'top':0 + "px"});
+	}, function(){
+		$('#HeaderSlidingBar').animate({'top':-150 + "px"});
+	});
 
 	$(".GreenTileIcon").click(function()
 	{
@@ -91,6 +84,8 @@ $(function() {
    {
 		$("RandomQuestion").css({'visibility': 'visible'});
    });
+   
+   //$('.sticky_editable').attr('contenteditable', 'true');
 });
 
 function tabSwitch(new_tab, new_content) {  

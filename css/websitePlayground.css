@@ -4,19 +4,6 @@ a{
 	margin: 0px;
 }
 
-h1{
-	text-align: left;
-	font-size: medium;
-}
-
-.draggable { 
-	width: 100px; 
-	height: 100px; 
-	padding: 0.5em; 
-	float: left; 
-	margin: 10px 10px 10px 0; 
-}
-
 .sticky{ 
 	/*background: #005000;*/
 }
@@ -30,63 +17,54 @@ h1{
 	font-size: medium;
 }
 
-#droppable { 
-	width: 150px; 
-	height: 150px; 
-	padding: 0.5em; 
-	float: left; 
-	margin: 10px; 
-}
-
-.test { 
-	width: 150px; 
-	height: 150px; 
-	padding: 0.5em; 
-	float: left; 
-	margin: 10px; 
-}
-
-#BrownTileArea{
-	vertical-align:middle;
-	left: 50%;
-	height: 50px;
-}
-
-#createStickyButton { 
-	top: 50px;
-	left: 20%;
-	position: absolute;
-}
-
 #stickyList{}
 
-#sidebox {
+/* 
+	Header styles
+*/
+#HeaderSlidingBar
+{
 	position:fixed;
 	z-index: 100000;
-	left: -225px;
-	top: 50px;
-	width:275px;
-	height:650px;
+	top: -150px;
+	width:100%;
 }
-
-#sidebox .tab,
-#sidebox .content {
-	background:#bada55;
+#HeaderSlidingBar #HeaderTitle{
+	background-color: #C1C4C6;
 }
-
-#sidebox .content {
-	float:left;
-	width:225px;
-	height: inherit;
+#HeaderSlidingBar #HeaderContent{
+	width:100%;
+	height: 150px;
+	background: white;
 }
-
-#sidebox .tab {
-	cursor:pointer;
-	background: #A0A0A0;
+#HeaderSlidingBar #HeaderTitle h1{
+	color: white;
+	padding: 0;
+	margin: 0;
+	font-size: 22px;
+}
+#HeaderSlidingBar #HeaderTitle p{
+	color: black;
+	display: inline;
+}
+#HeaderSlidingBar #BetaLogo{
+	position: relative;
 	float:right;
-	width:50px;
-	height:100px;
+	margin-right: 50px;
 }
+#HeaderSlidingBar #HeaderTab{
+	position: relative;
+	float:right;
+	margin-right: 15px;
+	width: 35px;
+	height: 25px;
+	background-color: #C1C4C6;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+/*
+	End of header styles
+*/
 
 #greenTileList
 {
@@ -104,48 +82,32 @@ ul #greenTileList li{
 	
 }
 
-.BrownTile
-{
-	width:200px;
-	height:55px;
-	background-color: #C2B59B;
-	margin-left:auto;
-    margin-right:auto;
-	margin-top: 1em;
-	margin-bottom: 1em;
-
-	border-style: solid;
-	border-width: 1.5px 1.5px 1.5px 1.5px;
-	border-color: black;
-	
-	
-}
-
-.BrownTile p
-{
-	text-align: center;
-}
-
 #challengeCard
 {
-	/*position: absolute;*/
 	width: 100px;
 	height: 100px;
 	
-	float: right;
 	background-color: yellow;
 	
 	border-style: solid;
 	border-width: 1.5px;
 	border-color: black;
 	
-	margin-top:-50px;
+}
+
+#RightHandBar{
+	float: right;
+}
+
+#StickyNoteIcon{
+	width: 100px;
+	height: 100px;
+	background: #F9F8C9;
 }
 
 #ChallegeCardContent
 {
 	visibility: collapse;
-	z-index: 50000;
 }
 
 h4{
@@ -169,6 +131,8 @@ h4{
 /* Footer stuff */
 html, body , #Surface{
     height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -176,15 +140,12 @@ body {
     padding: 0;
     background-color: #fff;
 }
-#container {
+#StickySpace {
     min-height: 100%;
     margin-bottom: -151px;
 }
-* html #container {
+* html #StickySpace {
     height: 100%;
-}
-#footer-spacer {
-    height: 151px;
 }
 footer{
     height: 150px;
@@ -349,4 +310,16 @@ a img.bottomBarIcon
 
 .GreenTileIcon{
 	float: left;
+}
+
+.sticky-clone{
+	width: 100px;
+	height: 100px;
+}
+
+.sticky_editable
+{
+	width: 100px;
+	height: 100px;
+	background: #F9F8C9;
 }
