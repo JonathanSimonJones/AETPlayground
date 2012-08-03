@@ -18,16 +18,18 @@
 
 	<body>
 		<div id="Surface">
+			<img src='Icons2/Header/beta.png' title='Beta' width="100" height="200" id="BetaLogo">
 			<header id="HeaderSlidingBar">
-				<img src='Icons2/Header/beta.png' title='Beta' width="100" height="200" id="BetaLogo">
 				<div id="HeaderContent">
 					<img src='Icons2/Header/MovingTargetsLogo.jpg' title='MovingTargetsLogo' width="300" height="150">
 				</div>
-				<div id="HeaderTitle">
-					<h1><b>BRAINSTORMING SPACE</b><small> How can you involve your <i>potential</i> audiences?</small></h1>
-				</div>
-				<div id="HeaderTab">
-					<img src='Icons2/Header/topBarArrowDown.png' width="35" height="25" id="MovingTargetsTab" alt="">
+				<div id="HeaderClickableBar">
+					<div id="HeaderTitle">
+						<h1><b>BRAINSTORMING SPACE</b><small> How can you involve your <i>potential</i> audiences?</small></h1>
+					</div>
+					<div id="HeaderTab">
+						<img src='Icons2/Header/topBarArrowDown.png' width="35" height="25" id="MovingTargetsTab" alt="">
+					</div>
 				</div>
 			</header>
 			
@@ -54,18 +56,6 @@
 			</div>
 			
 			<footer id="tabbed_box_1" class="tabbed_box">
-				<!--<div>  
-					<ul>  
-						<li><a>Tab</a></li>  
-						<li><a>Tab</a></li>  
-						<li><a>Tab</a></li>  
-					</ul>  
-					  
-					<div>Content for Tab 1</div>  
-					<div>Content for Tab 2</div>  
-					<div>Content for Tab 3</div>  
-				</div>-->
-	  
 				<div class="tabbed_area">  
 				  
 					<ul class="tabs">  

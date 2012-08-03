@@ -3,19 +3,15 @@ a, ul{
 	padding: 0px;
 	margin: 0px;
 }
-
 .sticky{ 
 }
-
 .greenSticky{
 	background-color: green;
 }
-
 .sticky p{
 	text-align: center;
 	font-size: medium;
 }
-
 #stickyList{}
 
 /* 
@@ -46,15 +42,16 @@ a, ul{
 	color: black;
 	display: inline;
 }
-#HeaderSlidingBar #BetaLogo{
-	position: relative;
-	float:right;
-	margin-right: 50px;
+#BetaLogo{
+	position: absolute;
+	top: 0px;
+	right: 2%;
+	z-index: 10001;
 }
 #HeaderSlidingBar #HeaderTab{
 	position: relative;
 	float:right;
-	margin-right: 15px;
+	right: 12%;
 	width: 35px;
 	height: 25px;
 	background-color: #C1C4C6;
@@ -65,29 +62,23 @@ a, ul{
 	End of header styles
 */
 
-#greenTileList
-{
+#greenTileList{
 	padding-top: 5px;
 	padding-left: 5px;
 }
-
 ul {
 	padding-left: 0px;				
 }
-
 ul #greenTileList li{
 	list-style-type: none;
 	display: inline;
 	
 }
-
-/* Footer stuff */
 html, body , #Surface{
     height: 100%;
 	margin: 0;
 	padding: 0;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -100,125 +91,7 @@ body {
 * html #StickySpace {
     height: 100%;
 }
-footer{
-    height: 140px;
-}
-footer p {
-    margin: 0;
-    padding: 0.3em 0;
-}
-
-#tabbed_box_1 {
-	/*position: relative;
-	top: -35px;*/
-	margin: 0px auto 0px auto;  
-	width:100%;  
-}  
-
-.tabbed_box h4 {  
-	font-family:Arial, Helvetica, sans-serif;  
-	font-size:23px;  
-	color:#ffffff;  
-	letter-spacing:-1px;  
-	margin-bottom:10px;  
-}  
-.tabbed_box h4 small {  
-	color:#e3e9ec;  
-	font-weight:normal;  
-	font-size:9px;  
-	font-family:Verdana, Arial, Helvetica, sans-serif;  
-	text-transform:uppercase;  
-	position:relative;  
-	top:-4px;  
-	left:6px;  
-	letter-spacing:0px;  
-}  
-
-ul.tabs{
-	margin:0px; 
-	padding:0px;  
-	margin-top:5px;
-	margin-bottom:6px;
-}
-
-ul.tabs li{
-	display: inline;
-	list-style:none;
-}
-ul.tabs li a {
-	display: inline-block;
-	background-color: grey;  
-	color: black;
-	padding-top:8px;
-	padding-bottom:8px;
-	text-decoration:none;  
-	font-size:9px;  
-	font-family:Verdana, Arial, Helvetica, sans-serif;  
-	font-weight:bold;
-	text-align: center;
-	text-transform:uppercase;  
-	border:1px solid black;
-	
-	width: 32.8%;
-}  
-ul.tabs li a:hover {  
-	background-color: #606060;  
-	border-color: black;  
-}  
-ul.tabs li a.active {  
-	background-color:silver;  
-	color:#282e32;  
-	border:1px solid #464c54;   
-	border-bottom: 1px solid silver;  
-}
-
-.footerTabContent {
-	background-color:silver; 
-	border:1px solid black;
-	padding-top: 0px;
-	padding-bottom: 20px;
-	/*border-top-style: none;*/
-	height: 100px;
-	width: 97.5%;
-	overflow-x: scroll;
-	overflow-y: hidden;
-	white-space: nowrap;
-	float:left;
-	margin-top: -7px;
-}  
-#content_2, #content_3 { display:none; }  
-
-ul.footerTabContent {  
-	margin:0px;
-	/*padding:0px 20px 0px 20px;*/
-}  
-.footerTabContent ul li {
-	list-style-type: none;
-	display:inline-block;
-	/*list-style:none;*/  
-	border-bottom:1px solid #d6dde0;
-}
-
-ul#footerHelpAndAddIcons
-{
-	float:left;
-}
-
-ul#footerHelpAndAddIcons li
-{
-	list-style:none;
-}
-ul#footerHelpAndAddIcons li a
-{
-	display: block;
-	margin-left: 10px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	width: 10px;
-}
-
-#OverLay
-{
+#OverLay{
 	position:absolute;
 	vertical-align: center;
 	font-size: 30px;
@@ -230,33 +103,15 @@ ul#footerHelpAndAddIcons li a
 	display:none; 
 	text-align:left; 
 }
-
 .shadow {
 	-moz-box-shadow:    4px 5px 8px 1px #666;
 	-webkit-box-shadow: 4px 5px 8px 1px #666;
 	box-shadow:         4px 5px 8px 1px #666;
 }
-
-a img.bottomBarIcon
-{
-	position: relative;
-	top: 5px;
-	left: -5px;
-}
-
-.GreenTileIcon{
-	float: left;
-	/* If scroll bar is deactivated below are true*/
-	width: 90px;
-	height: 90px;
-	margin: 4px;
-}
-
 .sticky-clone{
 	width: 100px;
 	height: 100px;
 }
-
 .sticky_editable
 {
 	width: 100px;
@@ -303,8 +158,7 @@ a img.bottomBarIcon
 	background: #F9F8C9;
 }
 
-#ChallegeCardContent
-{
+#ChallegeCardContent{
 	visibility: collapse;
 }
 
@@ -321,8 +175,7 @@ h4{
 {
 	visibility: collapse;
 }
-.ChallengeCardQuestion
-{
+.ChallengeCardQuestion{
 	visibility: collapse;
 }
 
@@ -369,3 +222,133 @@ h4{
 	top: 500px; 
 	left: 500px;
 }
+
+/*
+	Start of styles for bottom bar
+*/
+footer{
+    height: 140px;
+}
+footer p {
+    margin: 0;
+    padding: 0.3em 0;
+}
+#tabbed_box_1 {
+	/*position: relative;
+	top: -35px;*/
+	margin: 0px auto 0px auto;  
+	width:100%;  
+}
+.tabbed_box h4 {  
+	font-family:Arial, Helvetica, sans-serif;  
+	font-size:23px;  
+	color:#ffffff;  
+	letter-spacing:-1px;  
+	margin-bottom:10px;  
+}  
+.tabbed_box h4 small {  
+	color:#e3e9ec;  
+	font-weight:normal;  
+	font-size:9px;  
+	font-family:Verdana, Arial, Helvetica, sans-serif;  
+	text-transform:uppercase;  
+	position:relative;  
+	top:-4px;  
+	left:6px;  
+	letter-spacing:0px;  
+}
+ul.tabs{
+	margin:0px; 
+	padding:0px;  
+	margin-top:5px;
+	margin-bottom:6px;
+}
+ul.tabs li{
+	display: inline;
+	list-style:none;
+}
+ul.tabs li a {
+	display: inline-block;
+	background-color: grey;  
+	color: black;
+	padding-top:8px;
+	padding-bottom:8px;
+	text-decoration:none;  
+	font-size:9px;  
+	font-family:Verdana, Arial, Helvetica, sans-serif;  
+	font-weight:bold;
+	text-align: center;
+	text-transform:uppercase;  
+	border:1px solid black;
+	
+	width: 32.8%;
+}  
+ul.tabs li a:hover {  
+	background-color: #606060;  
+	border-color: black;  
+}  
+ul.tabs li a.active {  
+	background-color:silver;  
+	color:#282e32;  
+	border:1px solid #464c54;   
+	border-bottom: 1px solid silver;  
+}
+.footerTabContent {
+	background-color:silver; 
+	border:1px solid black;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	/*border-top-style: none;*/
+	height: 100px;
+	width: 97.5%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	float:left;
+	margin-top: -7px;
+}  
+#content_2, #content_3 { 
+	display:none; 
+}  
+ul.footerTabContent {  
+	margin:0px;
+	/*padding:0px 20px 0px 20px;*/
+}  
+.footerTabContent ul li {
+	list-style-type: none;
+	display:inline-block;
+	/*list-style:none;*/  
+	border-bottom:1px solid #d6dde0;
+}
+ul#footerHelpAndAddIcons
+{
+	float:left;
+}
+ul#footerHelpAndAddIcons li
+{
+	list-style:none;
+}
+ul#footerHelpAndAddIcons li a
+{
+	display: block;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 10px;
+}
+a img.bottomBarIcon{
+	position: relative;
+	top: 5px;
+	left: -5px;
+}
+.GreenTileIcon{
+	float: left;
+	/* If scroll bar is deactivated below are true*/
+	width: 90px;
+	height: 90px;
+	margin: 4px;
+}
+
+/*
+	End of styles for bottom bar
+*/

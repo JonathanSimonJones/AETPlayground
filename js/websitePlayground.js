@@ -54,7 +54,7 @@ $(function() {
 	});
 
 	// Used to animate the header
-	$('#HeaderSlidingBar #HeaderTab').toggle(function(){
+	$('#HeaderSlidingBar #HeaderClickableBar').toggle(function(){
 		$('#HeaderSlidingBar').animate({'top':0 + "px"});
 		$('#MovingTargetsTab').attr("src", "Icons2/Header/topBarArrowUp.png");
 	}, function(){
@@ -118,7 +118,7 @@ function tabSwitch(new_tab, new_content) {
 
 function CreateNewSticky(nameOfSticky)
 {
-	var htmlData='<div class="sticky-clone ui-draggable user-created-sticky"><p>Drag me around</p></div>';
+	var htmlData='<div class="sticky sticky-clone ui-draggable user-created-sticky sticky_editable shadow" contenteditable="true"><p>Drag me around</p></div>';
 	$('#stickyList').append(htmlData);
 	$('.sticky-clone').draggable({stack: ".sticky-clone"});
 }
