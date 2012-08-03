@@ -1,5 +1,5 @@
 /* WebsitePlayground.css */
-a{
+a, ul{
 	padding: 0px;
 	margin: 0px;
 }
@@ -24,7 +24,7 @@ a{
 #HeaderSlidingBar
 {
 	position:fixed;
-	z-index: 100000;
+	z-index: 10000;
 	top: -150px;
 	width:100%;
 }
@@ -95,22 +95,24 @@ body {
 }
 #StickySpace {
     min-height: 100%;
-    margin-bottom: -151px;
+    margin-bottom: -141px;
 }
 * html #StickySpace {
     height: 100%;
 }
 footer{
-    height: 150px;
+    height: 140px;
 }
 footer p {
     margin: 0;
     padding: 0.3em 0;
 }
 
-#tabbed_box {  
+#tabbed_box_1 {
+	/*position: relative;
+	top: -35px;*/
 	margin: 0px auto 0px auto;  
-	width:300px;  
+	width:100%;  
 }  
 
 .tabbed_box h4 {  
@@ -173,6 +175,8 @@ ul.tabs li a.active {
 .footerTabContent {
 	background-color:silver; 
 	border:1px solid black;
+	padding-top: 0px;
+	padding-bottom: 20px;
 	/*border-top-style: none;*/
 	height: 100px;
 	width: 97.5%;
@@ -222,7 +226,7 @@ ul#footerHelpAndAddIcons li a
 	top:0; 
 	left:0; 
 	width:100%;
-	z-index:100; 
+	z-index:1000000; 
 	display:none; 
 	text-align:left; 
 }
@@ -231,27 +235,6 @@ ul#footerHelpAndAddIcons li a
 	-moz-box-shadow:    4px 5px 8px 1px #666;
 	-webkit-box-shadow: 4px 5px 8px 1px #666;
 	box-shadow:         4px 5px 8px 1px #666;
-}
-		
-.Window
-{
-	position:absolute; 
-	width:300px; 
-	height:200px; 
-	z-index:200; 
-	border:5px solid #222; 
-	background: #FFF; 
-	top: 50%; 
-	left: 50%; 
-	margin-top: -100px; 
-	margin-left: -150px;
-}
-
-.GreyOverlay
-{
-	background:silver;
-    opacity:0.2;
-    filter:alpha(opacity=20);
 }
 
 a img.bottomBarIcon
@@ -263,6 +246,10 @@ a img.bottomBarIcon
 
 .GreenTileIcon{
 	float: left;
+	/* If scroll bar is deactivated below are true*/
+	width: 90px;
+	height: 90px;
+	margin: 4px;
 }
 
 .sticky-clone{
@@ -341,3 +328,44 @@ h4{
 
 /*
 	End of right bar styles
+*/
+
+/*
+	Start of Overlay Window styles
+*/
+.Window{
+	position:absolute; 
+	width:450px; 
+	height:350px; 
+	z-index:200; 
+	border:5px solid #FFFFFF; 
+	background: #565658; 
+	top: 50%; 
+	left: 50%; 
+	margin-top: -225px; 
+	margin-left: -175px;
+	border-radius: 15px;
+}
+.GreyOverlay{
+	background:silver;
+    opacity:0.2;
+    filter:alpha(opacity=20);
+}
+.GreenCardList{
+	list-style: none;
+	margin: 0;
+}
+.GreenCardList li{
+	display: inline;
+}
+
+/*
+	End of overlay window styles
+*/
+
+ .user-created-sticky{
+	position:relative; 
+	background: green; 
+	top: 500px; 
+	left: 500px;
+}

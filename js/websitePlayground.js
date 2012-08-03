@@ -3,8 +3,13 @@
 $(document).ready(function()
 {
 	$("#OverLay").css("height", $(document).height());
-	
+
 	$("#AddGreenCard").click(function(){
+		CreateNewSticky();
+		return false;
+	});
+	
+	$("#LearnMoreButton").click(function(){
 		$("#OverLay").fadeIn();
 		return false;
 	});
@@ -22,16 +27,14 @@ $(document).ready(function()
 									 $(ui.helper).clone(true).removeClass('box ui-draggable-dragging GreyOverlay RightBarIcon').addClass('sticky-clone shadow').appendTo('#stickyList');
 								}
 							});
+							
+	
+	$(window).bind("resize", function(){
+		$("#Window").css("height", $(window).height());
+	});
 });
 
 $(function() {						
-	function CreateNewSticky(nameOfSticky)
-	{
-		var htmlData='<div contenteditable="true"><div class="sticky-clone" ><p>Drag me around</p></div></div>';
-		$('#stickyList').append(htmlData);
-		$('.sticky-clone').draggable({stack: ".sticky-clone"});
-	}
-	
 	$(".sticky-clone").live('mouseover', function() {
 		$(this).draggable({ 
 			containment: '#Surface',
@@ -91,6 +94,11 @@ $(function() {
    */
    $('.sticky_editable').attr('contenteditable', 'true');
    
+   $('.CreateBetaTest').click(function()
+	{
+		alert('Foo');
+	});
+   
 });
 
 function tabSwitch(new_tab, new_content) {  
@@ -108,6 +116,9 @@ function tabSwitch(new_tab, new_content) {
   
 };  
 
-$(window).bind("resize", function(){
-	$("#Window").css("height", $(window).height());
-});
+function CreateNewSticky(nameOfSticky)
+{
+	var htmlData='<div class="sticky-clone ui-draggable user-created-sticky"><p>Drag me around</p></div>';
+	$('#stickyList').append(htmlData);
+	$('.sticky-clone').draggable({stack: ".sticky-clone"});
+}

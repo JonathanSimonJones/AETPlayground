@@ -91,14 +91,14 @@
 					  
 					<div id="content_1" class="footerTabContent">
 						<ul>
-							<li><img src='Icons2/GreenCards/beta.png' 					title='Beta Test Tile' 		width="100" height="100" class='GreenTileIcon CreateBetaTest sticky'></li>
+							<li><img src='Icons2/GreenCards/test.png' 					title='Beta Test Tile' 		width="100" height="100" class='GreenTileIcon CreateBetaTest sticky'></li>
 							<li><img src='Icons2/GreenCards/Codesign.png' 				title='Co design Tile' 		width="100" height="100" class='GreenTileIcon CreateCoDesign sticky'></li>
 							<li><img src='Icons2/GreenCards/contribute.png' 			title='Contribute Tile' 	width="100" height="100" class='GreenTileIcon CreateContribute sticky' ></li>
 							<li><img src='Icons2/GreenCards/create.png' 				title='Create Tile' 		width="100" height="100" class='GreenTileIcon CreateCreation sticky'></li>
 							<li><img src='Icons2/GreenCards/evaluate.png' 				title='Evaluate Tile' 		width="100" height="100" class='GreenTileIcon CreateEvaluate sticky'></li>
 							<li><img src='Icons2/GreenCards/extra%20content.png'		title='Extra Content Tile' 	width="100" height="100" class='GreenTileIcon CreateExtraContent sticky'></li>
-							<li><img src='Icons2/GreenCards/loyalty.png' 				title='Show Loyalty Tile' 	width="100" height="100" class='GreenTileIcon CreateLoyalty GreyOverlay sticky'></li>
-							<li><img src='Icons2/GreenCards/see%20process.png' 			title='See process Tile' 	width="100" height="100" class='GreenTileIcon CreateSeeProcess sticky'></li>
+							<li><img src='Icons2/GreenCards/show%20loyalty.png' 		title='Show Loyalty Tile' 	width="100" height="100" class='GreenTileIcon CreateLoyalty GreyOverlay sticky'></li>
+							<li><img src='Icons2/GreenCards/see%20the%20process.png' 	title='See process Tile' 	width="100" height="100" class='GreenTileIcon CreateSeeProcess sticky'></li>
 							<li><img src='Icons2/GreenCards/Share.png' 					title='Share Tile' 			width="100" height="100" class='GreenTileIcon CreateShare sticky'></li>
 							<li><img src='Icons2/GreenCards/talk%20to%20others.png'		title='Talk to others Tile' width="100" height="100" class='GreenTileIcon CreateTalkToOthers sticky'></li>
 							<li><img src='Icons2/GreenCards/talk%20to%20you.png' 		title='Talk to you Tile' 	width="100" height="100" class='GreenTileIcon CreateTalkToYou sticky'></li>
@@ -107,14 +107,14 @@
 					</div>  
 					<div id="content_2" class="footerTabContent">
 						<ul>
-							<li><img src='Icons2/GreenCards/beta.png' 					title='Beta Test Tile' 		width="100" height="100" class='GreenTileIcon CreateBetaTest GreyOverlay sticky'></li>
+							<li><img src='Icons2/GreenCards/test.png' 					title='Beta Test Tile' 		width="100" height="100" class='GreenTileIcon CreateBetaTest GreyOverlay sticky'></li>
 							<li><img src='Icons2/GreenCards/Codesign.png' 				title='Co design Tile' 		width="100" height="100" class='GreenTileIcon CreateCoDesign GreyOverlay sticky'></li>
 							<li><img src='Icons2/GreenCards/contribute.png' 			title='Contribute Tile' 	width="100" height="100" class='GreenTileIcon CreateContribute sticky' ></li>
 							<li><img src='Icons2/GreenCards/create.png' 				title='Create Tile' 		width="100" height="100" class='GreenTileIcon CreateCreation sticky'></li>
 							<li><img src='Icons2/GreenCards/evaluate.png' 				title='Evaluate Tile' 		width="100" height="100" class='GreenTileIcon CreateEvaluate sticky'></li>
 							<li><img src='Icons2/GreenCards/extra%20content.png'		title='Extra Content Tile' 	width="100" height="100" class='GreenTileIcon CreateExtraContent sticky'></li>
-							<li><img src='Icons2/GreenCards/loyalty.png' 				title='Show Loyalty Tile' 	width="100" height="100" class='GreenTileIcon CreateLoyalty GreyOverlay sticky'></li>
-							<li><img src='Icons2/GreenCards/see%20process.png' 			title='See process Tile' 	width="100" height="100" class='GreenTileIcon CreateSeeProcess sticky'></li>
+							<li><img src='Icons2/GreenCards/show%20loyalty.png' 		title='Show Loyalty Tile' 	width="100" height="100" class='GreenTileIcon CreateLoyalty GreyOverlay sticky'></li>
+							<li><img src='Icons2/GreenCards/see%20the%20process.png' 	title='See process Tile' 	width="100" height="100" class='GreenTileIcon CreateSeeProcess sticky'></li>
 							<li><img src='Icons2/GreenCards/Share.png' 					title='Share Tile' 			width="100" height="100" class='GreenTileIcon CreateShare sticky'></li>
 							<li><img src='Icons2/GreenCards/talk%20to%20others.png'		title='Talk to others Tile' width="100" height="100" class='GreenTileIcon CreateTalkToOthers sticky'></li>
 							<li><img src='Icons2/GreenCards/talk%20to%20you.png' 		title='Talk to you Tile' 	width="100" height="100" class='GreenTileIcon CreateTalkToYou sticky'></li>
@@ -123,14 +123,14 @@
 					</div>  
 					<div id="content_3" class="footerTabContent">
 						<ul>
-							<li><img src='Icons2/GreenCards/beta.png' 					title='Beta Test Tile' 		width="100" height="100" class='GreenTileIcon CreateBetaTest GreyOverlay sticky'></li>
+							<li><img src='Icons2/GreenCards/test.png' 					title='Beta Test Tile' 		width="100" height="100" class='GreenTileIcon CreateBetaTest GreyOverlay sticky'></li>
 							<li><img src='Icons2/GreenCards/Codesign.png' 				title='Co design Tile' 		width="100" height="100" class='GreenTileIcon CreateCoDesign GreyOverlay sticky'></li>
 							<li><img src='Icons2/GreenCards/contribute.png' 			title='Contribute Tile' 	width="100" height="100" class='GreenTileIcon CreateContribute GreyOverlay sticky' ></li>
 							<li><img src='Icons2/GreenCards/create.png' 				title='Create Tile' 		width="100" height="100" class='GreenTileIcon CreateCreation sticky'></li>
 							<li><img src='Icons2/GreenCards/evaluate.png' 				title='Evaluate Tile' 		width="100" height="100" class='GreenTileIcon CreateEvaluate sticky'></li>
 							<li><img src='Icons2/GreenCards/extra%20content.png'		title='Extra Content Tile' 	width="100" height="100" class='GreenTileIcon CreateExtraContent sticky'></li>
-							<li><img src='Icons2/GreenCards/loyalty.png' 				title='Show Loyalty Tile' 	width="100" height="100" class='GreenTileIcon CreateLoyalty sticky'></li>
-							<li><img src='Icons2/GreenCards/see%20process.png' 			title='See process Tile' 	width="100" height="100" class='GreenTileIcon CreateSeeProcess sticky'></li>
+							<li><img src='Icons2/GreenCards/show%20loyalty.png' 		title='Show Loyalty Tile' 	width="100" height="100" class='GreenTileIcon CreateLoyalty sticky'></li>
+							<li><img src='Icons2/GreenCards/see%20the%20process.png' 	title='See process Tile' 	width="100" height="100" class='GreenTileIcon CreateSeeProcess sticky'></li>
 							<li><img src='Icons2/GreenCards/Share.png' 					title='Share Tile' 			width="100" height="100" class='GreenTileIcon CreateShare sticky'></li>
 							<li><img src='Icons2/GreenCards/talk%20to%20others.png'		title='Talk to others Tile' width="100" height="100" class='GreenTileIcon CreateTalkToOthers sticky'></li>
 							<li><img src='Icons2/GreenCards/talk%20to%20you.png' 		title='Talk to you Tile' 	width="100" height="100" class='GreenTileIcon CreateTalkToYou sticky'></li>
@@ -140,7 +140,7 @@
 					<div>
 						<ul id="footerHelpAndAddIcons">
 							<li><a href="#" id="AddGreenCard">+</a></li>
-							<li><a href="#">?</a></li>
+							<li><a href="#" id="LearnMoreButton">?</a></li>
 						</ul>
 					</div>
 				</div>  <!-- end tabbed_area -->	
@@ -152,18 +152,18 @@
 			<div class="Window">
 				<div class="GreenCardExplained">
 					<ul class="GreenCardList">
-						<li><img src='Icons2/GreenCards/beta.png' 					title='Beta Test Tile' 		width="100" height="100" class='GreenTileIcon CreateBetaTest'></li>
-						<li><img src='Icons2/GreenCards/Codesign.png' 				title='Co design Tile' 		width="100" height="100" class='GreenTileIcon CreateCoDesign'></li>
-						<li><img src='Icons2/GreenCards/contribute.png' 			title='Contribute Tile' 	width="100" height="100" class='GreenTileIcon CreateContribute'></li>
-						<li><img src='Icons2/GreenCards/create.png' 				title='Create Tile' 		width="100" height="100" class='GreenTileIcon CreateCreation'></li>
-						<li><img src='Icons2/GreenCards/evaluate.png' 				title='Evaluate Tile' 		width="100" height="100" class='GreenTileIcon CreateEvaluate'></li>
-						<li><img src='Icons2/GreenCards/extra%20content.png'		title='Extra Content Tile' 	width="100" height="100" class='GreenTileIcon CreateExtraContent'></li>
-						<li><img src='Icons2/GreenCards/loyalty.png' 				title='Show Loyalty Tile' 	width="100" height="100" class='GreenTileIcon CreateLoyalty'></li>
-						<li><img src='Icons2/GreenCards/see%20process.png' 			title='See process Tile' 	width="100" height="100" class='GreenTileIcon CreateSeeProcess'></li>
-						<li><img src='Icons2/GreenCards/Share.png' 					title='Share Tile' 			width="100" height="100" class='GreenTileIcon CreateShare'></li>
-						<li><img src='Icons2/GreenCards/talk%20to%20others.png'		title='Talk to others Tile' width="100" height="100" class='GreenTileIcon CreateTalkToOthers'></li>
-						<li><img src='Icons2/GreenCards/talk%20to%20you.png' 		title='Talk to you Tile' 	width="100" height="100" class='GreenTileIcon CreateTalkToYou'></li>
-						<li><img src='Icons2/GreenCards/unique.png' 				title='Unique Tile'	 		width="100" height="100" class='GreenTileIcon CreateUnique'></li>
+						<li><img src='Icons2/GreenCards/test.png' 					title='Beta Test Tile' 		width="100" height="100" class='HelpIcon CreateBetaTest'></li>
+						<li><img src='Icons2/GreenCards/Codesign.png' 				title='Co design Tile' 		width="100" height="100" class='HelpIcon CreateCoDesign'></li>
+						<li><img src='Icons2/GreenCards/contribute.png' 			title='Contribute Tile' 	width="100" height="100" class='HelpIcon CreateContribute'></li>
+						<li><img src='Icons2/GreenCards/create.png' 				title='Create Tile' 		width="100" height="100" class='HelpIcon CreateCreation'></li>
+						<li><img src='Icons2/GreenCards/evaluate.png' 				title='Evaluate Tile' 		width="100" height="100" class='HelpIcon CreateEvaluate'></li>
+						<li><img src='Icons2/GreenCards/extra%20content.png'		title='Extra Content Tile' 	width="100" height="100" class='HelpIcon CreateExtraContent'></li>
+						<li><img src='Icons2/GreenCards/show%20loyalty.png' 		title='Show Loyalty Tile' 	width="100" height="100" class='HelpIcon CreateLoyalty'></li>
+						<li><img src='Icons2/GreenCards/see%20the%20process.png' 	title='See process Tile' 	width="100" height="100" class='HelpIcon CreateSeeProcess'></li>
+						<li><img src='Icons2/GreenCards/Share.png' 					title='Share Tile' 			width="100" height="100" class='HelpIcon CreateShare'></li>
+						<li><img src='Icons2/GreenCards/talk%20to%20others.png'		title='Talk to others Tile' width="100" height="100" class='HelpIcon CreateTalkToOthers'></li>
+						<li><img src='Icons2/GreenCards/talk%20to%20you.png' 		title='Talk to you Tile' 	width="100" height="100" class='HelpIcon CreateTalkToYou'></li>
+						<li><img src='Icons2/GreenCards/unique.png' 				title='Unique Tile'	 		width="100" height="100" class='HelpIcon CreateUnique'></li>
 					</ul><!-- End GreenCardList -->
 				</div><!-- End GreenCardExplained -->
 			</div><!-- End Window-->
