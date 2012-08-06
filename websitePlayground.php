@@ -137,11 +137,11 @@
 			</footer>
 		</div> <!-- End surface -->
 		
-						
+				
 		<div id="OverLay">
 			<div class="Window">
 				<div class="GreenCardExplained">
-					<ul class="GreenCardList">
+					<!--<ul class="GreenCardList">
 						<li><img src='Icons2/GreenCards/test.png' 					title='Beta Test Tile' 		width="100" height="100" class='HelpIcon CreateBetaTest'></li>
 						<li><img src='Icons2/GreenCards/Codesign.png' 				title='Co design Tile' 		width="100" height="100" class='HelpIcon CreateCoDesign'></li>
 						<li><img src='Icons2/GreenCards/contribute.png' 			title='Contribute Tile' 	width="100" height="100" class='HelpIcon CreateContribute'></li>
