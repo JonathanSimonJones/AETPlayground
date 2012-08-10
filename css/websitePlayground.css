@@ -20,7 +20,7 @@ a, ul{
 #HeaderSlidingBar
 {
 	position:fixed;
-	z-index: 10000;
+	z-index: 500;
 	top: -150px;
 	width:100%;
 }
@@ -46,7 +46,7 @@ a, ul{
 	position: absolute;
 	top: 0px;
 	right: 2%;
-	z-index: 10001;
+	z-index: 501;
 }
 #HeaderSlidingBar #HeaderTab{
 	position: relative;
@@ -91,18 +91,6 @@ body {
 * html #StickySpace {
     height: 100%;
 }
-#OverLay{
-	position:absolute;
-	vertical-align: center;
-	font-size: 30px;
-	background-image:url(../dim.png);
-	top:0; 
-	left:0; 
-	width:100%;
-	z-index:1000000; 
-	display:none; 
-	text-align:left; 
-}
 .shadow {
 	-moz-box-shadow:    4px 5px 8px 1px #666;
 	-webkit-box-shadow: 4px 5px 8px 1px #666;
@@ -125,21 +113,7 @@ body {
 
 .RightBarIcon{
 	margin: 20px;
-}
-
-#challengeCard
-{
-	position: relative;
-	top: 365px;
-	right: -140px;
 	float: right;
-	width: 100px;
-	height: 100px;
-	background-color: yellow;
-	
-	border-style: solid;
-	border-width: 1.5px;
-	border-color: black;
 }
 
 #RightHandBar{
@@ -148,7 +122,6 @@ body {
 	float: right;
 	top: 100px;*/
 }
-
 #StickyNoteIcon{
 	position: relative;
 	top: 230px;
@@ -157,26 +130,42 @@ body {
 	height: 100px;
 	background: #F9F8C9;
 }
-
-#ChallegeCardContent{
-	visibility: collapse;
+#challengeCardArea{
+	position: relative;
+	top: 365px;
+	right: -120px;
+	float: right;
+	display: block;
+	width: 100px;
 }
-
-h4{
+#ChallengeCard{
+	/*
+	position: relative;
+	top: 365px;
+	right: -120px;
+	float: right;
+	*/
+	margin-top: 0px;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	border-bottom-style: solid;
+	border-bottom-width: 1.5px;
+	border-bottom-color: black;
+}
+#SeeAllButton{
+	margin-top: -5px;
+	position: relative;
+	width: auto;
+	background-color: silver;
+	border-top: 1px;
 	text-align: center;
 }
-
-#PickRandomQuestion
-{
-	visibility: inherit;
-}
-
-.RandomQuestion
-{
-	visibility: collapse;
-}
-.ChallengeCardQuestion{
-	visibility: collapse;
+#NextStep{
+	position: relative;
+	float: right;
+	top: 500px;
+	right: -220px;
 }
 
 /*
@@ -186,7 +175,7 @@ h4{
 /*
 	Start of Overlay Window styles
 */
-.Window{
+#Window{
 	position:absolute; 
 	width:450px; 
 	height:350px; 
@@ -198,18 +187,29 @@ h4{
 	margin-top: -225px; 
 	margin-left: -175px;
 	border-radius: 15px;
+	z-index: 1001;
 }
-.GreyOverlay{
-	background:silver;
-    opacity:0.2;
-    filter:alpha(opacity=20);
+#OverLay{
+	position:absolute;
+	vertical-align: center;
+	font-size: 30px;
+	background-image:url(../dim.png);
+	top:0; 
+	left:0; 
+	width:100%;
+	height: 104%;	/* Make sure it extends beyond the screen */
+	z-index:1000;
+	display:none; 
+	text-align:left;
 }
-.GreenCardList{
+#GreenCardList{
 	list-style: none;
 	margin: 0;
+	z-index: 5;
 }
-.GreenCardList li{
+#GreenCardList li{
 	display: inline;
+	z-index: 5;
 }
 
 /*
@@ -353,7 +353,21 @@ a img.bottomBarIcon{
 	height: 90px;
 	margin: 4px;
 }
-
+.GreyOverlay{
+	background:silver;
+    opacity:0.2;
+    filter:alpha(opacity=20);
+	z-index: 4;
+}
+.tabbed_area2{
+	display: none;
+}
+.Droppable{
+	width: 100px;
+	height: 100px;
+	background-color: purple;
+	margin: 5px;
+}
 /*
 	End of styles for bottom bar
 */

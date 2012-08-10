@@ -33,27 +33,28 @@
 				</div>
 			</header>
 			
-			<div id="StickySpace">
-				<section id="RightHandBar">
-					<section id="StickyNoteIcon" class="sticky sticky_editable RightBarIcon">
-						<p>Sticky Note</p>
-					</section>
-				
-					<section id="challengeCard" class="RightBarIcon">
-						<h4> Challenge Card </h4>
-						<div id="ChallegeCardContent">
-							<a href="#" id="PickRandomQuestion">Pick random related question</a>
-							<p class="RandomQuestion">This is where a question a random related question would be</p>
-							<a href="#" id="DisplayQuestions">Display a selection of questions</a>
-							<p class="ChallengeCardQuestion">So here is a question</p>
-							<p class="ChallengeCardQuestion">And another</p>
-							<p class="ChallengeCardQuestion">And another</p>
+			<section id="StickySpace">
+				<ul id="RightHandBar">
+					<li>
+						<div id="StickyNoteIcon" class="sticky sticky_editable RightBarIcon">
+							<p>Sticky Note</p>
 						</div>
-					</section>
-				</section>
+					</li>
 				
-				<section id="stickyList"> </section>
-			</div>
+					<li>
+						<div id="challengeCardArea">
+							<img src='Icons2/RightBar/Random%20Challenge.png' title='Random Challenge' width="100" height="100" id='ChallengeCard'>
+							<p id="SeeAllButton">See all</p>
+						</div>
+					</li>
+					
+					<li>
+						<a href="#" id='NextStep'><img src='Icons2/RightBar/NextStep.png' title='Next Step Button' width="100" height="100"></a>
+					</li>
+				</ul>
+				
+				<div id="stickyList"> </div>
+			</section>
 			
 			<footer id="tabbed_box_1" class="tabbed_box">
 				<div class="tabbed_area">  
@@ -81,7 +82,7 @@
 					  
 					<div id="content_1" class="footerTabContent">
 						<ul>
-							<li><img src='Icons2/GreenCards/test.png' 					title='Beta Test Tile' 		width="100" height="100" class='GreenTileIcon CreateBetaTest sticky'></li>
+							<li><img src='Icons2/GreenCards/test.png' 					title='Test Tile' 			width="100" height="100" class='GreenTileIcon CreateBetaTest sticky'></li>
 							<li><img src='Icons2/GreenCards/Codesign.png' 				title='Co design Tile' 		width="100" height="100" class='GreenTileIcon CreateCoDesign sticky'></li>
 							<li><img src='Icons2/GreenCards/contribute.png' 			title='Contribute Tile' 	width="100" height="100" class='GreenTileIcon CreateContribute sticky' ></li>
 							<li><img src='Icons2/GreenCards/create.png' 				title='Create Tile' 		width="100" height="100" class='GreenTileIcon CreateCreation sticky'></li>
@@ -97,7 +98,7 @@
 					</div>  
 					<div id="content_2" class="footerTabContent">
 						<ul>
-							<li><img src='Icons2/GreenCards/test.png' 					title='Beta Test Tile' 		width="100" height="100" class='GreenTileIcon CreateBetaTest GreyOverlay sticky'></li>
+							<li><img src='Icons2/GreenCards/test.png' 					title='Test Tile' 			width="100" height="100" class='GreenTileIcon CreateBetaTest GreyOverlay sticky'></li>
 							<li><img src='Icons2/GreenCards/Codesign.png' 				title='Co design Tile' 		width="100" height="100" class='GreenTileIcon CreateCoDesign GreyOverlay sticky'></li>
 							<li><img src='Icons2/GreenCards/contribute.png' 			title='Contribute Tile' 	width="100" height="100" class='GreenTileIcon CreateContribute sticky' ></li>
 							<li><img src='Icons2/GreenCards/create.png' 				title='Create Tile' 		width="100" height="100" class='GreenTileIcon CreateCreation sticky'></li>
@@ -113,7 +114,7 @@
 					</div>  
 					<div id="content_3" class="footerTabContent">
 						<ul>
-							<li><img src='Icons2/GreenCards/test.png' 					title='Beta Test Tile' 		width="100" height="100" class='GreenTileIcon CreateBetaTest GreyOverlay sticky'></li>
+							<li><img src='Icons2/GreenCards/test.png' 					title='Test Tile' 			width="100" height="100" class='GreenTileIcon CreateBetaTest GreyOverlay sticky'></li>
 							<li><img src='Icons2/GreenCards/Codesign.png' 				title='Co design Tile' 		width="100" height="100" class='GreenTileIcon CreateCoDesign GreyOverlay sticky'></li>
 							<li><img src='Icons2/GreenCards/contribute.png' 			title='Contribute Tile' 	width="100" height="100" class='GreenTileIcon CreateContribute GreyOverlay sticky' ></li>
 							<li><img src='Icons2/GreenCards/create.png' 				title='Create Tile' 		width="100" height="100" class='GreenTileIcon CreateCreation sticky'></li>
@@ -129,20 +130,38 @@
 					</div>
 					<div>
 						<ul id="footerHelpAndAddIcons">
-							<li><a href="#" id="AddGreenCard">+</a></li>
-							<li><a href="#" id="LearnMoreButton">?</a></li>
+							<!--<li><a href="#" id="AddGreenCard">+</a></li>
+							<li><a href="#" id="LearnMoreButton">?</a></li>-->
+							<li><img src='Icons2/BottomBarIcons/add%20green.png' title='Add green card' width=45 height=45 id="AddGreenCard"></li>
+							<li><img src='Icons2/BottomBarIcons/info%20green.png' title='Information for green cards' width=45 height=45 id="LearnMoreButton"></li>
 						</ul>
 					</div>
 				</div>  <!-- end tabbed_area -->	
+				<div class="tabbed_area2">  
+				  
+					<ul class="tabs">
+						<li>
+							<a href="javascript:tabSwitch('tab_1', 'content_1');" id="tab_1" class="active footerTab">
+								Initative1
+							</a>
+						</li>  
+					</ul>  
+					
+					<div class="footerTabContent">
+						<ul id="DroppableList">
+							<li class="Droppable">Droppable area</li>
+						</ul>
+					</div>
+				</div>
 			</footer>
 		</div> <!-- End surface -->
 		
 				
 		<div id="OverLay">
-			<div class="Window">
-				<div class="GreenCardExplained">
-					<!--<ul class="GreenCardList">
-						<li><img src='Icons2/GreenCards/test.png' 					title='Beta Test Tile' 		width="100" height="100" class='HelpIcon CreateBetaTest'></li>
+			<div id="Window">
+				<div id="GreenCardExplained">
+					<ul id="GreenCardList">
+						<li><img src='Icons2/GreenCards/test.png' 					title='Test Tile' 			width="100" height="100" class='HelpIcon CreateBetaTest'></li>
 						<li><img src='Icons2/GreenCards/Codesign.png' 				title='Co design Tile' 		width="100" height="100" class='HelpIcon CreateCoDesign'></li>
 						<li><img src='Icons2/GreenCards/contribute.png' 			title='Contribute Tile' 	width="100" height="100" class='HelpIcon CreateContribute'></li>
 						<li><img src='Icons2/GreenCards/create.png' 				title='Create Tile' 		width="100" height="100" class='HelpIcon CreateCreation'></li>
@@ -156,6 +175,9 @@
 						<li><img src='Icons2/GreenCards/unique.png' 				title='Unique Tile'	 		width="100" height="100" class='HelpIcon CreateUnique'></li>
 					</ul><!-- End GreenCardList -->
 				</div><!-- End GreenCardExplained -->
+				<div id="YellowCardList">
+				
+				</div>
 			</div><!-- End Window-->
 		</div><!-- End overlay-->
 	</body>
