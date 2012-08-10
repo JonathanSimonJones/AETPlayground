@@ -4,6 +4,7 @@ var numGreenCards;
 var height;
 var stickyUniqueId = 1;
 var droppableUniueId = 1;
+var currentGreenCardDescription;
 
 var drpOptions = {accept: ".sticky-clone",
 				drop: function(event, ui)
@@ -38,7 +39,13 @@ $(document).ready(function()
 	
 	$("#OverLay").click(function(){
 		$("#OverLay").fadeOut();
+		$("#WindowOverlay").fadeOut();
 		return false;
+	});
+	
+	$('#Window').click(function(event)
+	{
+		event.stopPropagation();
 	});
 	
 	$('.sticky').draggable(
@@ -48,7 +55,7 @@ $(document).ready(function()
 		containment: '#Surface',
 		stop:function(event, ui)
 		{
-			 $(ui.helper).clone(true).removeClass('box ui-draggable-dragging GreyOverlay RightBarIcon').addClass('sticky-clone shadow').appendTo('#stickyList').attr('id', 'userSticky' + stickyUniqueId++);
+			 $(ui.helper).clone(true).removeClass('box ui-draggable-dragging GreyOverlay RightBarIcon').addClass('sticky-clone shadow').appendTo('#stickyList').attr('id', 'userSticky' + stickyUniqueId++).find( "p" ).html( "" );
 			 //console.log("Hello World!");
 		}
 	});
@@ -105,15 +112,49 @@ $(function() {
 
 	$('.HelpIcon').click(function(event)
 	{
-		var title = $(this).attr('title');
-		alert(title);
-		
+		currentGreenCardDescription = $(this).attr('title');
+		$('.HelpIcon').addClass('GreyOverlay');
+		$('#GreenCardDescriber').fadeIn();//css({'display': 'block'});
+		//alert(title);
+		//var $title = $(
+		//$('.greenCardDescription').children().filter("#currentGreenCardDescription").css({'display': 'block'});
+		//$('.HelpIcon').removeClass('GreyOverlay');
+		switch(currentGreenCardDescription)
+		{
+		case "Test Tile"	: $('#TestDesc').css({'display': 'block'});
+								break;
+		case "Co design Tile": $('#CoDesignDesc').css({'display': 'block'});
+								break;
+		case "Contribute Tile": $('#ContributeDesc').css({'display': 'block'});
+					break;
+		case "Create Tile": $('#CreateDesc').css({'display': 'block'});
+					break;
+		case "Evaluate Tile": $('#EvaluateDesc').css({'display': 'block'});
+					break;
+		case "Extra Content Tile": $('#ExtraContentDesc').css({'display': 'block'});
+					break;
+		case "Show Loyalty Tile": $('#ShowLoyaltyDesc').css({'display': 'block'});
+					break;
+		case "See process Tile": $('#SeeTheProcessDesc').css({'display': 'block'});
+					break;
+		case "Share Tile": $('#ShareDesc').css({'display': 'block'});
+					break;
+		case "Talk to others Tile": $('#TalkToOthersDesc').css({'display': 'block'});
+					break;
+		case "Talk to you Tile": $('#TalkToYouDesc').css({'display': 'block'});
+					break;
+		case "Unique Tile": $('#UniqueDesc').css({'display': 'block'});
+					break;
+		};
 		// Stop overlay from fading out due to click event
 		event.stopPropagation();
 	});
 	
-	$('#Window').click(function(event)
+	$('#GreenCardDescriber').click(function(event)
 	{
+		$('.greenCardDescription').css({'display': 'none'});
+		$('#GreenCardDescriber').fadeOut();//({'display': 'none'});
+		$('.HelpIcon').removeClass('GreyOverlay');
 		event.stopPropagation();
 	});
 	
@@ -153,7 +194,7 @@ function CreateNewSticky(nameOfSticky)
 {
 	var htmlData='<div class="sticky sticky-clone ui-draggable user-created-sticky sticky_editable shadow" contenteditable="true"><p>Drag me around</p></div>';
 	$('#stickyList').append(htmlData);
-	$('.sticky-clone').draggable({stack: ".sticky-clone"}).attr('id', 'userSticky' + stickyUniqueId++);
+	$('.sticky-clone').draggable({stack: ".sticky-clone"}).attr('id', 'userSticky' + stickyUniqueId++).find( "p" ).html( "Dragging!" );;
 };
 
 function countNumberOfGreenCards(){

@@ -161,7 +161,10 @@
 			<div id="Window">
 				<div id="GreenCardExplained">
 					<ul id="GreenCardList">
-						<li><img src='Icons2/GreenCards/test.png' 					title='Test Tile' 			width="100" height="100" class='HelpIcon CreateBetaTest'></li>
+						<li>
+							<img src='Icons2/GreenCards/test.png' 					title='Test Tile' 			width="100" height="100" class='HelpIcon CreateBetaTest'>
+							
+						</li>
 						<li><img src='Icons2/GreenCards/Codesign.png' 				title='Co design Tile' 		width="100" height="100" class='HelpIcon CreateCoDesign'></li>
 						<li><img src='Icons2/GreenCards/contribute.png' 			title='Contribute Tile' 	width="100" height="100" class='HelpIcon CreateContribute'></li>
 						<li><img src='Icons2/GreenCards/create.png' 				title='Create Tile' 		width="100" height="100" class='HelpIcon CreateCreation'></li>
@@ -179,6 +182,20 @@
 				
 				</div>
 			</div><!-- End Window-->
+			<div id="GreenCardDescriber">
+				<p class="greenCardDescription" id="TestDesc">Techniue used with interactive media with the aim of testing the technology and interface. However it can also be understood as shadowing or role-playing a prototyped experience to gather users' responses and feedback.</p>
+				<p class="greenCardDescription" id="CoDesignDesc">Involvment of potential audience-users at concept stage with the aims of inspiration, idea generation and/or research. It can be either done through open call to the public or the recruitment of focus groups.</p>
+				<p class="greenCardDescription" id="ContributeDesc">Enabling audience-users to contribute to the out-come. Generally it is understood as contribution when audience-users generate content (or bits of content) under the general vision (concept) of the creator.</p>
+				<p class="greenCardDescription" id="CreateDesc">Enabling audience-users to contribute to the outcome. Generally it is understood as creation when audience-users generate content - connected to the main content - but under their own creative vision.</p>
+				<p class="greenCardDescription" id="EvaluateDesc">Not only making available unfinished bits of content to the audience/users but allowing them to interact with the creators by providing feedback and suggestions. This can either happen at concept or implementation stage.</p>
+				<p class="greenCardDescription" id="ExtraContentDesc">It is understood as extra content any content that initially would not belong to the main content. Cut scenes, bits of the process (sketches, trashed ideas), getting to know the creators, interviews.</p>
+				<p class="greenCardDescription" id="ShowLoyaltyDesc">When the audience-users identify with the content they may want to display thay engagement. That demonstration can take many forms, from merchandising to belonging to fan-communities.</p>
+				<p class="greenCardDescription" id="SeeTheProcessDesc">Audience-users will to learn more about the creators & their processes. Unfinished pieces of content that acquite value for the audience-users and could be exploited as a promotion tool or even monetised.</p>
+				<p class="greenCardDescription" id="ShareDesc">Enabling the audience-users to share their experience - and with it your content - with others. Providing the framework and tools for it can increase visibility of your content and rise awareness.</p>
+				<p class="greenCardDescription" id="TalkToOthersDesc">If people engage with the content they will talk about whether you are involve or not in those conversations. Providing the framework for those discussion can give you great insight into how they understand and engage with your content.</p>
+				<p class="greenCardDescription" id="TalkToYouDesc">Audience-users interest in learning more about the creators or even the fictional characters. Similarly, opening a channel for direct communication can provide you with great insight into your audiences and their engagement.</p>
+				<p class="greenCardDescription" id="UniqueDesc">The feeling of having a unique exerience usually comes from a high degree of customisation or the access to exclusive content.</p>
+			</div>
 		</div><!-- End overlay-->
 	</body>
 </html>

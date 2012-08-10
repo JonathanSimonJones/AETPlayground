@@ -43,7 +43,7 @@ a, ul{
 	display: inline;
 }
 #BetaLogo{
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	right: 2%;
 	z-index: 501;
@@ -192,7 +192,6 @@ body {
 #OverLay{
 	position:absolute;
 	vertical-align: center;
-	font-size: 30px;
 	background-image:url(../dim.png);
 	top:0; 
 	left:0; 
@@ -204,14 +203,36 @@ body {
 }
 #GreenCardList{
 	list-style: none;
-	margin: 0;
-	z-index: 5;
+	margin-left: 14px;
+	margin-top: 14px;
 }
 #GreenCardList li{
 	display: inline;
-	z-index: 5;
+}
+.HelpIcon {
+	z-index: 1004;
+}
+#GreenCardDescriber{
+	position:absolute; 
+	width:300px; 
+	height:300px; 
+	background-color: #339900;
+	z-index:200; 
+	border:5px solid #FFFFFF; 
+	top: 50%; 
+	left: 50%; 
+	margin-top: -200px; 
+	margin-left: -110px;
+	border-radius: 15px;
+	z-index: 1001;
+	display: none;
 }
 
+#TestDesc, #CoDesignDesc, #ContributeDesc, #CreateDesc, #EvaluateDesc,
+#ExtraContentDesc, #ShowLoyaltyDesc, #SeeTheProcessDesc, #ShareDesc,
+#TalkToOthersDesc, #TalkToYouDesc, #UniqueDesc{
+	display: none;
+}
 /*
 	End of overlay window styles
 */
@@ -305,7 +326,7 @@ ul.tabs li a.active {
 	padding-bottom: 20px;
 	/*border-top-style: none;*/
 	height: 100px;
-	width: 97.5%;
+	width: 95%;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	white-space: nowrap;
@@ -367,6 +388,18 @@ a img.bottomBarIcon{
 	height: 100px;
 	background-color: purple;
 	margin: 5px;
+}
+#footerHelpAndAddIcons{
+	background-color: silver;
+	margin-top: -6px;
+	width: 4.4%;
+	height: 121px;
+}
+#AddGreenCard{
+	padding: 7px;
+}
+#LearnMoreButton{
+	padding: 7px;
 }
 /*
 	End of styles for bottom bar
