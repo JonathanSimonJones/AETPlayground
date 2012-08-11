@@ -227,7 +227,9 @@ body {
 	z-index: 1001;
 	display: none;
 }
-
+li.greenCardDescription p{
+	font-size: x-large;
+}
 #TestDesc, #CoDesignDesc, #ContributeDesc, #CreateDesc, #EvaluateDesc,
 #ExtraContentDesc, #ShowLoyaltyDesc, #SeeTheProcessDesc, #ShareDesc,
 #TalkToOthersDesc, #TalkToYouDesc, #UniqueDesc{
@@ -321,7 +323,12 @@ ul.tabs li a.active {
 }
 .footerTabContent {
 	background-color:silver; 
-	border:1px solid black;
+	border-color: black;
+	border-style: solid;
+	border-left-width: 1px;
+	border-right-width: 0px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
 	padding-top: 0px;
 	padding-bottom: 20px;
 	/*border-top-style: none;*/
@@ -348,7 +355,16 @@ ul.footerTabContent {
 }
 ul#footerHelpAndAddIcons
 {
+	position: relative;
 	float:left;
+	border-style: solid;
+	border-color: black;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	top: -1px;
+	left: -2px;
 }
 ul#footerHelpAndAddIcons li
 {
@@ -404,3 +420,21 @@ a img.bottomBarIcon{
 /*
 	End of styles for bottom bar
 */
+#FeedBackForm{
+	/*margin-top: 30px;*/
+}
+#FeedBackForm ul{
+	list-style: none;
+}
+#FeedBackForm ul li{
+	display: inline;
+}
+.FormListElement{
+	display: inline-block;
+	padding: 5px;
+}
+#BetaLogoForm{
+	width: 30px;
+	height: 60px;
+	margin-left: 10px;
+}
