@@ -20,7 +20,7 @@ var drpOptions = {accept: ".sticky-clone",
 						//$(this).parent().clone(true).appendTo('#DroppableList');
 						//console.log(ui.draggable.attr('id'));	
 						$(ui.draggable).removeClass('shadow').addClass('initativeItem').insertBefore(this);
-						$(this).addClass('hasSticky');
+						$(this).parent().addClass('hasSticky');
 					}
 					else
 					{
@@ -29,12 +29,15 @@ var drpOptions = {accept: ".sticky-clone",
 				},
 				out: function(event, ui)
 				{
-					$(ui.draggable).addClass('shadow').removeClass('initativeItem').appendTo('#stickyList');
-					if( $(".Droppable").length > 1)
+					if($(ui.draggable).hasClass('initativeItem'))
 					{
-						$(this).parent().addClass("removeDroppable");
+						$(ui.draggable).addClass('shadow').removeClass('initativeItem').appendTo('#stickyList');
+						if( $(".Droppable").length > 1)
+						{
+							$(this).parent().addClass("removeDroppable");
+						}
+						$(this).parent().removeClass('hasSticky');
 					}
-					$(this).removeClass('hasSticky');
 				}
 				};
 
@@ -85,7 +88,7 @@ $(function() {
 			snapMode: "inner",
 			stop: function()
 			{	
-				$('.removeDroppable').last().remove();
+				$('li').filter('.removeDroppable').not('.hasSticky').remove();
 			}
 		}).bind('click', function()
 								{
@@ -226,7 +229,7 @@ function CreateNewSticky(nameOfSticky)
 {
 	var htmlData='<div class="sticky sticky-clone ui-draggable user-created-sticky sticky_editable shadow" contenteditable="true"><p>Drag me around</p></div>';
 	$('#stickyList').append(htmlData);
-	$('.sticky-clone').draggable({stack: ".sticky-clone"}).attr('id', 'userSticky' + stickyUniqueId++).find( "p" ).html( "" ).css({'position': 'absolute'});
+	$('.sticky-clone').draggable({stack: ".sticky-clone"}).attr('id', 'userSticky' + stickyUniqueId++).css.find( "p" ).html( "" );
 };
 
 function countNumberOfGreenCards(){
