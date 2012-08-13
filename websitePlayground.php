@@ -49,7 +49,7 @@
 					</li>
 					
 					<li>
-						<!--<a href="#" id='NextStep'><img src='Icons2/RightBar/NextStep.png' title='Next Step Button' width="100" height="100"></a>-->
+						<a href="#" id='NextStep'><img src='Icons2/RightBar/NextStep.png' title='Next Step Button' width="100" height="100"></a>
 					</li>
 				</ul>
 				
@@ -149,7 +149,9 @@
 					
 					<div class="footerTabContent">
 						<ul id="DroppableList">
-							<li class="Droppable">Droppable area</li>
+							<li>
+								<div class="Droppable">Droppable area</div>
+							</li>
 						</ul>
 					</div>
 				</div>

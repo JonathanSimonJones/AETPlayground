@@ -9,20 +9,32 @@ var greenCardDescriptionActive = false;
 var displayGreenCards = false;
 var feedback = false;
 
+
 var drpOptions = {accept: ".sticky-clone",
 				drop: function(event, ui)
 				{
-					//createNewDroppable(this);
-					$(this).clone().appendTo('#DroppableList').droppable(drpOptions);
-					//$(this).parent().clone(true).appendTo('#DroppableList');
-					//console.log(ui.draggable.attr('id'));	
-					$(ui.draggable).removeClass('shadow').appendTo(this);
+					if(!$(this).hasClass('hasSticky'))
+					{
+						//createNewDroppable(this);
+						$(this).parent().clone().appendTo('#DroppableList').children().droppable(drpOptions);
+						//$(this).parent().clone(true).appendTo('#DroppableList');
+						//console.log(ui.draggable.attr('id'));	
+						$(ui.draggable).removeClass('shadow').addClass('initativeItem').insertBefore(this);
+						$(this).addClass('hasSticky');
+					}
+					else
+					{
+						$(ui.draggable).addClass('revertToPreviousPosition');
+					}
 				},
 				out: function(event, ui)
 				{
-					$(ui.draggable).addClass('shadow').appendTo('#StickySpace');
-					$(this).droppable("destroy");
-					//$(this).remove():
+					$(ui.draggable).addClass('shadow').removeClass('initativeItem').appendTo('#stickyList');
+					if( $(".Droppable").length > 1)
+					{
+						$(this).parent().addClass("removeDroppable");
+					}
+					$(this).removeClass('hasSticky');
 				}
 				};
 
@@ -58,7 +70,7 @@ $(document).ready(function()
 		containment: '#Surface',
 		stop:function(event, ui)
 		{
-			 $(ui.helper).clone(true).removeClass('box ui-draggable-dragging GreyOverlay RightBarIcon').addClass('sticky-clone shadow').appendTo('#stickyList').attr('id', 'userSticky' + stickyUniqueId++).find( "p" ).html( "" );
+			 $(ui.helper).clone(true).removeClass('box ui-draggable-dragging GreyOverlay RightBarIcon sticky').addClass('sticky-clone shadow').appendTo('#stickyList').attr('id', 'userSticky' + stickyUniqueId++).find( "p" ).html( "" );
 			 //console.log("Hello World!");
 		}
 	});
@@ -71,6 +83,10 @@ $(function() {
 			stack: ".sticky-clone",
 			snap: ".Droppable",
 			snapMode: "inner",
+			stop: function()
+			{	
+				$('.removeDroppable').last().remove();
+			}
 		}).bind('click', function()
 								{
 									$(this).focus();
@@ -210,7 +226,7 @@ function CreateNewSticky(nameOfSticky)
 {
 	var htmlData='<div class="sticky sticky-clone ui-draggable user-created-sticky sticky_editable shadow" contenteditable="true"><p>Drag me around</p></div>';
 	$('#stickyList').append(htmlData);
-	$('.sticky-clone').draggable({stack: ".sticky-clone"}).attr('id', 'userSticky' + stickyUniqueId++).find( "p" ).html( "Dragging!" );;
+	$('.sticky-clone').draggable({stack: ".sticky-clone"}).attr('id', 'userSticky' + stickyUniqueId++).find( "p" ).html( "" ).css({'position': 'absolute'});
 };
 
 function countNumberOfGreenCards(){
@@ -253,7 +269,7 @@ function switchOverlayState(state)
 				  feedback = true;
 				  $('#GreenCardExplained').css({'display':'none'});
 				  $('#Feedback').css({'display':'block'});
-				  $('#Window').css({'background-color':'#DDDDDD'});
+				  $('#Window').css({'background-color':'#BBBBBB'});
 			break;
 	};
 };
